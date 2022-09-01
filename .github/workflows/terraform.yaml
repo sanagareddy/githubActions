@@ -1,0 +1,9 @@
+name: Terraform
+jobs:
+  shell command:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Terraform setup
+      uses: hashicorp/setup-terraform@v1
+    - run: terraform 
