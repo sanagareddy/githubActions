@@ -1,6 +1,10 @@
 name: Terraform
+
+on:
+  push:
+     branches: [ main ]
 jobs:
-  shell command:
+  shell_command:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
